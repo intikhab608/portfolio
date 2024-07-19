@@ -68,7 +68,7 @@ function Home() {
 
               <div className="space-y-2">
                 <h1 className="font-semibold text-center">Currently Working In</h1>
-                <div className="flex space-x-4">
+                <div className="flex space-x-4 justify-center">
                   <IoLogoJavascript className="text-xl cursor-pointer hover:scale-125 duration-200 " />
                   <BsFiletypeJava className="text-xl cursor-pointer hover:scale-125 duration-200 " />
                   <FaAngular className="text-xl cursor-pointer hover:scale-125 duration-200 " />
