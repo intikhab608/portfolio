@@ -40,6 +40,13 @@ function Projects() {
       name: "springboot",
     },
   ];
+
+  function onVideoClick(){
+    alert("Video will be added soon!");
+  }
+  function onSourceClick(){
+    alert("Source Code will be added soon!");
+  }
   return (
     <div name="Projects" className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-10">
       <div>
@@ -53,13 +60,12 @@ function Projects() {
               <div>
                 <div className="px-2 text-xl font-bold mb-2">{name}</div>
                 <p className="px-2">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic,
-                  architecto.
+                  These are not the projects, I will add my projects later.
                 </p>
               </div>
-              <div className="space-x-4 px-4 justify-around py-2">
-                <button className="bg-blue-500 border-[1px] rounded-md text-white text-xl font-semibold p-1 cursor-pointer hover:bg-blue-700">Video</button>
-                <button className="bg-green-500 border-[1px] rounded-md text-white text-xl font-semibold p-1 cursor-pointer hover:bg-green-700">Source Code</button>
+              <div className="space-x-4 px-2 justify-around py-2">
+                <button className="bg-blue-500 border-[1px] rounded-md text-white text-xl font-semibold p-1 cursor-pointer hover:bg-blue-700" onClick={onVideoClick}>Video</button>
+                <button className="bg-green-500 border-[1px] rounded-md text-white text-xl font-semibold p-1 cursor-pointer hover:bg-green-700" onClick={onSourceClick}>Source Code</button>
               </div>
             </div>
           ))}
